@@ -11,9 +11,24 @@ $(document).ready(function(){
 
 	a.push(10);
 	console.log(a);
+	//console.log(a.length);
 
-	a[11] = 11;
-	console.log(a.length);
+
+	for(i = 0; i < a.length; i++){
+		console.log(a[i]);
+	};
+
+	function compareNumberic(a, b){
+		if(a > b) return 1;
+		if(a < b) return -1;
+	}
+
+	a.sort(compareNumberic)
+	console.log(a);
+
+
+
+
 
 
 });

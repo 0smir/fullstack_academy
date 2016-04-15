@@ -26,8 +26,36 @@ $(document).ready(function(){
 	a.sort(compareNumberic)
 	console.log(a);
 
+	//add one more value to array
 
+	
+	a.push(11);
+	console.log(a.length);
+	console.log(a);
 
+	//pop method
+
+	var last = a.pop();
+	console.log(last);
+
+	var last = a.pop();
+	console.log(last);
+	console.log(a.length);
+
+	//shift/unshift method
+
+	var field = [22, 33, 44];
+
+	field.unshift(55);
+	console.log(field);
+	field.unshift(11);
+	console.log(field);
+	
+	var first = field.shift();
+	console.log(first);
+	console.log(field);
+	field.shift();
+	console.log(field);
 
 
 

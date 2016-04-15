@@ -58,5 +58,26 @@ $(document).ready(function(){
 	console.log(field);
 
 
+	//split method
+
+	var name = 'Ira, Mira, Juo, Wuko, Petro';
+	var arrName = name.split(',');
+	for(var i = 0; i < arrName.length; i++){
+		document.write('Mail for: ' + arrName[i] + "<br/>");
+	}
+
+
+	// join method
+
+	var allNames = ["Ira", "Mira", "Juo", "Wuko", "Petro"];
+	console.log(allNames);
+	var stringOfName = allNames.join(', ');
+	document.write("Did you send mail to: " + stringOfName + "? </br>");
+
+	//delete
+
+	delete arrName[2];
+	console.log(arrName);
+
 
 });

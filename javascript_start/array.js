@@ -80,4 +80,20 @@ $(document).ready(function(){
 	console.log(arrName);
 
 
+	var arrOfNumber = [2, 4, 33, 87, 6, 9 ,0];
+
+	function sortingMimMax(array){
+		document.write("This is array:" + arrOfNumber + "<br/>");
+		array.sort(compareNumberic);
+		var min = array[0], max = array[array.length - 1];
+		console.log(max);
+
+		document.write("Min numder of array: " + min + "; <br/>" + "Max number of array: " + max + ". <br/><br/>");
+	}
+
+	sortingMimMax(arrOfNumber);
+
+	arrOfNumber.pop();
+	sortingMimMax(arrOfNumber);
+
 });

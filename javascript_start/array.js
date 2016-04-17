@@ -18,6 +18,8 @@ $(document).ready(function(){
 		console.log(a[i]);
 	};
 
+
+
 	function compareNumberic(a, b){
 		if(a > b) return 1;
 		if(a < b) return -1;

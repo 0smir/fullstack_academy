@@ -3,17 +3,19 @@ $(document).ready(function(){
 	var	columbiaBlue = '#9bddff';
 	var lightSlateGrey = '#778899';
 	var white = '#FFFFFF';
+	var darckBorder = '1px solid #343434',
+		caribianBlue = '#ccfcff';
 
 	
 	//document.getElementById('page-wrapper').style.width = "200px";
 
 	document.getElementById('page-wrapper').style.cssText="width: 100%; min-height: 100px; border: 1px solid #00bfff;";
-	document.getElementById('page-wrapper').style.backgroundColor = columbiaBlue;
+	document.getElementById('page-wrapper').style.backgroundColor = white;
 
 //add nav
 	var nav = document.createElement('ul')
 		nav.className = "main-nav"
-		nav.style.cssText = "width: 95%; min-height: 20px; display: flex; justify-content: space-around; background-color: #778899; padding: 0; margin: 10px auto;";
+		nav.style.cssText = "width: 95%; min-height: 20px; display: flex; justify-content: space-around; padding: 0; margin: 10px auto;";
 
 	document.getElementById('page-wrapper').appendChild(nav);
 
@@ -43,17 +45,23 @@ $(document).ready(function(){
 
 	//console.log(nav.getElementsByTagName("li"));
 	
+
+
 	var navList = document.getElementsByClassName('main-nav')[0];
 		console.log(navList);
 	var list = navList.getElementsByTagName('li');
-	console.log(list);
+	//console.log(list);
 	function addColor(data){
 		for(i = 0; i < data.length; i++){
-			data[i].style.color = white;
+			data[i].style.cssText = "width: 20%; text-align: center; color: #FFFFFF; border: 1px solid #343434; border-radius: 5px; padding: 15px; list-style: none; background-color: #778899;";
 		}
-
 	}
 	addColor(list);
+
+	nav.style.backgroundColor = caribianBlue;
+	nav.style.padding = "5px";
+	nav.style.borderRadius = "10px";
+	nav.style.border = darckBorder;
 
 	
 	

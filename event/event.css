@@ -1,0 +1,27 @@
+*{
+	box-sizing: border-box;
+}
+
+#logo{
+	width: 605px;
+	height: 605px;
+	position: relative;
+	background-image: url(images/1.jpg);
+	background-repeat: no-repeat;
+}
+
+#logo > a{
+	width: 40px;
+	height: 40px;
+	display: block;
+	padding: 10px 5px;
+	border-radius: 5px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #4169e1;
+	background-color: #00bfff;
+	color: #ffffff;
+}

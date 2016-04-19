@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 	var blue = '#00bfff';
 	var	columbiaBlue = '#9bddff';
@@ -15,7 +17,7 @@ $(document).ready(function(){
 //add nav
 	var nav = document.createElement('ul')
 		nav.className = "main-nav"
-		nav.style.cssText = "width: 95%; min-height: 20px; display: flex; justify-content: space-around; padding: 0; margin: 10px auto;";
+		nav.style.cssText = "width: 100%; min-height: 20px; display: flex; justify-content: space-around; padding: 0; margin: 10px auto;";
 
 	document.getElementById('page-wrapper').appendChild(nav);
 
@@ -39,20 +41,7 @@ $(document).ready(function(){
 		navItem.innerHTML = "Каталог";
 	nav.appendChild(navItem);
 
-	//console.log(nav.getElementsByTagName("li"));
-	
 
-
-	var navList = document.getElementsByClassName('main-nav')[0];
-		console.log(navList);
-	var list = navList.getElementsByTagName('li');
-	//console.log(list);
-	function addColor(data){
-		for(i = 0; i < data.length; i++){
-			data[i].style.cssText = "width: 20%; text-align: center; color: #FFFFFF; border: 1px solid #343434; border-radius: 5px; padding: 15px; list-style: none; background-color: #778899;";
-		}
-	}
-	addColor(list);
 
 	nav.style.backgroundColor = caribianBlue;
 	nav.style.padding = "5px";
@@ -61,15 +50,17 @@ $(document).ready(function(){
 
 
 		// add left asside
-	var aside = document.createElement("aside")
-		aside.id = "left-side"
-		aside.style.cssText = "width: 25%; border: 1px solid red;"
-	document.getElementById("page-wrapper").appendChild(aside);
+	var asideLeft = document.createElement("aside")
+		asideLeft.id = "left-side"
+		asideLeft.style.cssText = "width: 25%; border: 1px solid red;"
+	document.getElementById("page-wrapper").appendChild(asideLeft);
 
 	//add menu
 	var menu = document.createElement("ul")
-		menu.className = "left-menu"
-		menu.style.cssText = "";
+		menu.className = "left_menu"
+		menu.style.cssText = " display: flex; flex-direction: column; justify-content: space-between; padding: 15px 0 0 0; margin: 0 auto;";
+
+	menu.style.backgroundColor = caribianBlue;
 
 	var menuItem = document.createElement("li")
 		menuItem.innerHTML = "Новинки";
@@ -92,11 +83,16 @@ $(document).ready(function(){
 		menu.appendChild(menuItem);
 
 	var menuItem = document.createElement("li")
-		menuItem.innerHTML = "Распродажа";
+		menuItem.innerHTML = "Распродажа"
+
 		menu.appendChild(menuItem);
 
 
+
 	document.getElementById("left-side").appendChild(menu);
+	menu.getElementsByTagName("li");
+
+
 
 	//main content
 
@@ -131,6 +127,44 @@ $(document).ready(function(){
 	//
 
 
+	var navList = document.getElementsByClassName('main-nav')[0];
+	var list = navList.getElementsByTagName('li');
+
+	function styleOfNavItems(data){
+		for(i = 0; i < data.length; i++){
+			data[i].style.cssText = "text-align: center; color: #FFFFFF; border: 1px solid #343434; border-radius: 5px; padding: 15px 100px; list-style: none; background-color: #778899;";
+		}
+	}
+	styleOfNavItems(list);
+	
+
+
+	var menuItemsList = document.getElementsByClassName("left_menu")[0].getElementsByTagName("li");
+
+	function styleOfMenuItems(data){
+		for(i = 0; i < data.length; i++){
+
+			data[i].style.cssText = "margin-bottom: 15px; text-align: center; color: #FFFFFF; border: 1px solid #343434; border-radius: 5px; padding: 15px 100px; list-style: none; background-color: #778899;";
+		}
+	}
+	styleOfMenuItems(menuItemsList);
+
+	var asideRight = document.createElement("aside")
+		asideRight.id = "right-side"
+		asideRight.innerHTML = "GGGGGGGG"
+		asideRight.style.cssText = "width: 24%; border: 1px solid red; background-color: #ccfcff;"
+	document.getElementById("page-wrapper").appendChild(asideRight);
+
+	var newsBlock = document.createElement("ul")
+		newsBlock.className = "news";
+
+	document.getElementById("right-side").appendChild(newsBlock);
+
+	var newsItem = document.createElement("li")
+		newsItem.id = "news-1"
+		newsItem.style.cssText = "list-style-image: url(images/news1.png)"
+		newsItem.innerHTML = "Кэтти Пэри и Джон Майер ищут дом";
+	newsBlock.appendChild(newsItem);
 	
 	
 

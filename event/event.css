@@ -25,3 +25,22 @@
 	background-color: #00bfff;
 	color: #ffffff;
 }
+
+.button-aray{
+	min-height: 100px;
+	margin: 20px auto;
+	border: 1px solid #636363;
+}
+
+.road{
+	height: 20px;
+	width: 90%;
+	margin: 15px auto;
+	border: 1px solid #636363;
+}
+.road-inner{
+	height: 100%;
+	width: 0;
+	background-color: #b22222;
+}
+

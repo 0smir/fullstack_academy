@@ -1,0 +1,26 @@
+*{
+	box-sizing: border-box;
+}
+
+h3{
+	text-align: center;
+}
+
+.wrapp{
+	width: 450px;
+	height: 450px;
+	position: relative;	
+	background-image: url(images/5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title{
+	visibility: hidden;
+	width: 100%;
+	background-color: rgba(98, 97, 104, .5);
+	border: 1px solid rgba(98, 97, 104, 1);
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	bottom: 0;
+}

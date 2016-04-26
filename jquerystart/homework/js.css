@@ -35,7 +35,17 @@ h3{
 	padding: 15px;
 }
 
-.crossHoris{
+.close-block{
+	border: 1px solid red;
+	height: 60px;
+	width: 100%;
+	padding: 15px;
+	background-color: pink;
+	margin-top: 20px;
+}
+
+.crossHoris,
+.horis{
 	width: 30px;
 	height: 2px;
 	background-color: rgba(255, 255, 255, 1);
@@ -47,7 +57,8 @@ h3{
 
 }
 
-.crossVert{
+.crossVert,
+.vert{
 	width: 30px;
 	height: 2px;
 	background-color: rgba(255, 255, 255, 1);

@@ -35,6 +35,11 @@ $(document).ready(function(){
 	});
 
 
+	$(".toggle").click(function(){
+		$(".two").slideToggle(5000);
+
+	});
+
 
 
 });

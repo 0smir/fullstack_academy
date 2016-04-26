@@ -32,4 +32,19 @@ $(document).ready(function(){
 												transition: "transform 0.3s"});
 
 	});
+
+	$(".second").mouseenter(function(){
+		$("img").css({
+			"display":"block",
+			"transform": "scale(1.1)",
+			"transition": " transform 0.3s"
+		});
+	});
+	$(".second").mouseleave(function(){
+		$("img").css({
+			"transform": "scale(1)",
+			"transition": " transform 0.3s",
+			"display": "none"
+		});
+	});
 });

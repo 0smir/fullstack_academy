@@ -4,3 +4,9 @@
 	background-color: green;
 	position: relative;
 }
+
+.two{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}

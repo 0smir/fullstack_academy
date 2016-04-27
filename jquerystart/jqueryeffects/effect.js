@@ -18,10 +18,21 @@ $(document).ready(function(){
 	});
 
 	$(".joke").on("click", function ok(){
+
 		$(".three").hide(300, function(){
 			$(".three").show(300, ok());
 		});
 	});
+
+	$("button").on("click", function(){
+		$(".four").toggle(3000, function(){
+			console.log("Выполняем toggle");
+		});
+	});
+	$(".fadeToggle").on("click", function(){
+		$(".five").fadeToggle();
+	})
+
 	
 
 });

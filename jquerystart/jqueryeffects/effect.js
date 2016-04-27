@@ -18,10 +18,13 @@ $(document).ready(function(){
 	});
 
 	$(".joke").on("click", function ok(){
-
 		$(".three").hide(300, function(){
-			$(".three").show(300, ok());
+			$(".three").show(300), ok();
 		});
+	});
+
+	$(".stop").on("click", function(){
+		$(".three").stop(true, false);
 	});
 
 	$("button").on("click", function(){

@@ -21,8 +21,15 @@ $(document).ready(function(){
 			console.log(element);
 			$(element).find("span").css({"color": "cyan"});
 		}
-
 	});
+
+	$("button").on("click", function(){
+		$(".progressInner").animate({
+			width: "100%"
+		}, 5000);
+	});
+
+
 
 	
 });

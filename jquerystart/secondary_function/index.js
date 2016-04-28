@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$("li").each(function(index, element){
+	$("ul").find("li").each(function(index, element){
 		console.log(index + ":" + $(this).text());
 		if (index == 2){
 			$(element).css({"background-color": "red"});
@@ -8,8 +8,18 @@ $(document).ready(function(){
 			$(element).css({backgroundColor: "green"});
 		}else if(index == 3){
 			$(element).css({backgroundColor: "yellow"});
-		}else {
+		}else 	{
 			$(element).css({backgroundColor: "pink"});
+		}
+
+	});
+
+	var olItems = $("ol").find("li")
+	$.grep(olItems, function(element, index){
+		//console.log(element);
+		if(index ==2){
+			console.log(element);
+			$(element).find("span").css({"color": "cyan"});
 		}
 
 	});

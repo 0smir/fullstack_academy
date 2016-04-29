@@ -29,7 +29,16 @@ $(document).ready(function(){
 		}, 5000);
 	});
 
+	var divArr = $(".new").find("div");
+	$.map(divArr, function(element){
+		$(element).append("<div></div>");
+		$(element).find("div").addClass("block5");
 
+	});
+
+	$.map(divArr, function(element){
+		console.log(element);
+	});
 
 	
 });

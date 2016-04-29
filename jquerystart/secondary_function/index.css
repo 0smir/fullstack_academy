@@ -9,3 +9,38 @@
 	width: 0;
 	background-color: rgba(240, 128, 128, .5);
 }
+
+button{
+	background-color: rgba(255, 197, 80, 1);
+	border: 1px solid rgba(255, 92, 80, 1);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+.new{
+	display: flex;
+	justify-content: space-around;
+}
+
+.block1,
+.block2,
+.block3,
+.block4{
+	width: 70px;
+	height: 70px;
+	background-color: rgba(250, 218, 94, 1);
+	border: 2px solid rgba(255, 127, 80, 1);
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 5px;
+	text-align: center;
+}
+
+.block5{
+	width: 30px;
+	height: 30px;
+	background-color: rgba(185, 232, 195, 1);
+	border: 1px solid rgba(59, 174, 82, 1);
+	margin: 0 auto;
+}

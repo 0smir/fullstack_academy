@@ -17,24 +17,18 @@
 
 		
 
-	function addColor(list){
-		var list = itemList;
-		itemList = Array.prototype.slice.call(itemList);
-		console.log(itemList);
+	function addColor(){
+		for(var i = 0; i < itemList.length; i++){
+		
+			if ( i == 0 || i % 2 == 0){
 
-		itemList.forEach(function(item, index){
-
-			console.log(item);
-			
-			if(index % 2 == 0){
-				item.classList.add('odd');
-			}else{
-				item.classList.add('even');
+				itemList[i].classList.add('even');
+			} else{
+				itemList[i].classList.add('odd');
 			}
-		});
+		}
 	}
-	addColor(itemList);
-	
+	addColor();
 
 	ul.firstElementChild.classList.add('first');
 
@@ -54,8 +48,9 @@
 			newItem.innerHTML = newSkill;
 			ul.appendChild(newItem);
 		}
-		
+
 		countItems(itemList);
+		addColor();
 	}
 	
 

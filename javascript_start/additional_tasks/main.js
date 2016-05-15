@@ -18,26 +18,33 @@
 		
 
 	function addColor(){
+
 		for(var i = 0; i < itemList.length; i++){
-		
-			if ( i == 0 || i % 2 == 0){
+			itemList[i].classList.remove('even', 'odd', 'first');
+			
+			if (i % 2 == 0){
 
 				itemList[i].classList.add('even');
-			} else{
+			} 
+			else{
 				itemList[i].classList.add('odd');
 			}
 		}
+		ul.firstElementChild.classList.add('first');
 	}
 	addColor();
 
-	ul.firstElementChild.classList.add('first');
+	
 
 
 
 	btnAddSkill.addEventListener("click", addItem);
 
 	function addItem(){
-		var newSkill = prompt("Write your new skill!", '');
+		var center = Math.floor(itemList.length/2),
+			newSkill = prompt("Write your new skill!", ''),
+			position = prompt("Choose position of new skill? Start, center or end?", '');
+
 		if (newSkill == null){
 			console.log("не заполнено окно")
 		} else if(newSkill == ' '){
@@ -46,7 +53,13 @@
 		else{
 			var newItem = document.createElement('li');
 			newItem.innerHTML = newSkill;
-			ul.appendChild(newItem);
+				if(position == null || position == "End" || position == "end"){
+					ul.appendChild(newItem);
+				} else if(position == "Start" || position == "start"){
+					ul.insertBefore(newItem, ul.firstElementChild);
+				}else if(position == "Center" || position == "center"){
+					ul.insertBefore(newItem, itemList[center]);
+				}
 		}
 
 		countItems(itemList);

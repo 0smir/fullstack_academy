@@ -4,6 +4,7 @@
 	var ul = document.getElementById("list"),
 		itemList = ul.getElementsByTagName('li'),
 		btnAddSkill = document.getElementById('addSkill'),
+		btnRemoveSill = document.getElementById('removeItem'),
 		oddElement = ul.querySelectorAll("li:nth-child(odd)"),
 		evenElement = ul.querySelectorAll("li:nth-child(even)");
 
@@ -39,6 +40,7 @@
 
 
 	btnAddSkill.addEventListener("click", addItem);
+	btnRemoveSill.addEventListener("click", renoveItem);
 
 	function addItem(){
 		var center = Math.floor(itemList.length/2),
@@ -66,6 +68,11 @@
 		addColor();
 	}
 	
+
+
+	function renoveItem(title){
+
+	}
 
 
 

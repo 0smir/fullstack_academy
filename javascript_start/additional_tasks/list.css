@@ -43,16 +43,26 @@ pre {
 
 .my-experience li.first{
 	font-weight: bold;
+	background-color: green;
 }
 
-#addSkill{
+button{
 	height: 40px;
 	width: 170px;
 	font-size: 15px;
-	color: #616262;
-	background-color:  #f0ffff;
-	border: 1px solid #4f666a;
 	border-radius: 5px;
+	border: 1px solid #4f666a;
+	color: #616262;
+}
+
+#addSkill{
+	background-color:  #f0ffff;
 	box-shadow: inset 0px -2px 6px 1px #d9dede, 
 				inset 0px 7px 5px 0px #fbfefe;
+}
+
+#removeItem{
+	background-color:  #ffb9b9;
+	box-shadow: inset 0px -2px 6px 1px #ff7979, 
+				inset 0px 7px 5px 0px #ffdddd;
 }

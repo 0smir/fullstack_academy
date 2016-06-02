@@ -1,0 +1,115 @@
+
+@import "bootstrap/css/bootstrap.min";
+@import "core";
+
+
+header,
+body{
+  font-family: 'Merriweather', serif;
+}
+
+.main{
+  border: 1px solid red;
+}
+
+.hero-section{
+  //background-color: #241e18;
+  background-color: #000000;
+  background-image: url("../images/herobg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.hero-section p:first-of-type{
+  margin-top: 8rem;
+}
+
+.hero-section h1{
+  margin: 10rem 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+nav li > a{
+  text-transform: uppercase;
+
+}
+
+nav li{
+  margin-right: 3rem;
+}
+
+//.design > .circle,
+//.development > .circle,
+//.research > .circle{
+//  //height: 16.5rem;
+//  //width: 16.5rem;
+//  padding: 8rem;
+//  background-color: $prime;
+//}
+
+.design > .circle,
+.development > .circle,
+.research > .circle{
+  height: 16.5rem;
+  width: 16.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: $prime;
+}
+
+.design > .circle{
+  background-image: url("../images/works/workexample6.png");
+}
+
+.development > .circle{
+  background-image: url("../images/works/workexample7.png");
+}
+
+.research > .circle{
+  background-image: url("../images/works/workexample8.png");
+}
+
+
+.work-list >li{
+  margin-bottom: 3rem;
+}
+
+figure {
+  height: 19rem;
+  border: 2px solid $pampas;
+  padding: .4rem;
+  border-radius: 3px;
+}
+figure > img{
+  height: 100%;
+}
+
+figcaption{
+  height: 100%;
+  width: 100%;
+  padding: 2rem 5.5rem 0;
+  border-radius: 3px;
+  background-color: rgba(233, 142, 25, .8);
+  display: none;
+}
+
+figure:hover figcaption{
+  display: block;
+  top: 0;
+  left:0;
+}
+
+footer .main{
+  min-height: 34rem;
+  padding: 10rem 0;
+}
+
+.social{
+  background-color: $second;
+}

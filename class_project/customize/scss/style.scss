@@ -113,3 +113,17 @@ footer .main{
 .social{
   background-color: $second;
 }
+
+.social a{
+  width: 7rem;
+  height: 7rem;
+  display: block;
+  border: 1px solid red;
+  border-radius: 50%;
+  padding-top: 2rem;
+}
+.social img{
+  display: block;
+  margin: 0 auto;
+  //padding: 2rem;
+}

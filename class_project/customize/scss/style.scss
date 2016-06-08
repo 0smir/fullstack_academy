@@ -1,5 +1,5 @@
 
-@import "bootstrap/css/bootstrap.min";
+@import "../bootstrap/css/bootstrap.min";
 @import "core";
 
 
@@ -34,23 +34,32 @@ ul{
   padding: 0;
 }
 
-nav li > a{
+nav li > a,
+.mob-menu li>a{
   text-transform: uppercase;
-
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255, 255, 255, .4);
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid transparent;
 }
+
+nav li > a:hover,
+.mob-menu li>a:hover{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 2px solid $prime;
+}
+
 
 nav li{
   margin-right: 3rem;
 }
 
-//.design > .circle,
-//.development > .circle,
-//.research > .circle{
-//  //height: 16.5rem;
-//  //width: 16.5rem;
-//  padding: 8rem;
-//  background-color: $prime;
-//}
+.mob-menu li{
+  margin-right: 1rem;
+}
 
 .design > .circle,
 .development > .circle,
@@ -80,14 +89,15 @@ nav li{
   margin-bottom: 3rem;
 }
 
-figure {
-  height: 19rem;
+figure{
   border: 2px solid $pampas;
   padding: .4rem;
   border-radius: 3px;
 }
+
 figure > img{
-  height: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 figcaption{
@@ -153,3 +163,20 @@ footer .main{
   color: $white;
 }
 
+.burger{
+  width: 4rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: transparent;
+}
+
+.stick{
+  width: 3rem;
+  margin-bottom: 0.5rem;
+  height: 0.3rem;
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.burger:hover .stick{
+  background-color: rgba(255, 255, 255, .8);
+}

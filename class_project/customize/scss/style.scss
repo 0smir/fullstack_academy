@@ -110,20 +110,46 @@ footer .main{
   padding: 10rem 0;
 }
 
+.social p{
+  padding-bottom: 8rem;
+}
+
+
 .social{
   background-color: $second;
+}
+
+.social ul{
+  width: 42rem;
+}
+
+.social li{
+  width: 24%;
+  padding: 0;
 }
 
 .social a{
   width: 7rem;
   height: 7rem;
-  display: block;
-  border: 1px solid red;
+  text-decoration: none;
+}
+
+.icon-dribbble,
+.icon-instagram,
+.icon-mail2,
+.icon-rss{
+  font-size: 2.1rem;
+  border: 1px solid $tintGray;
   border-radius: 50%;
-  padding-top: 2rem;
+  padding: 2rem;
+  color: $colorTextLightGray;
 }
-.social img{
-  display: block;
-  margin: 0 auto;
-  //padding: 2rem;
+
+.social a .icon-dribbble:hover,
+.social a .icon-instagram:hover,
+.social a .icon-mail2:hover,
+.social a .icon-rss:hover{
+  border: 1px solid $white;
+  color: $white;
 }
+

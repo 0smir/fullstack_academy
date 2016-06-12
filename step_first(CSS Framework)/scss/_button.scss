@@ -1,0 +1,98 @@
+﻿// --------------------------------------------------
+// Buttons
+// --------------------------------------------------
+
+// Button global
+// -------------------------
+
+// main button
+.btn {
+	padding: 2rem 4.5rem;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	border-radius: $bntRadius;
+	color: $white;
+	text-align: center;
+	width: auto;
+	display: inline-block;
+	font-weight: bold;
+
+	&:focus,
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+// button color skins
+// -------------------------
+
+.btn-prime {
+	border: 2px solid $prime;
+	background: $prime;
+
+	&:focus,
+	&:hover {
+		border-color: darken($prime, 5%);
+		background-color: darken($prime, 5%);
+	}
+}
+
+.btn-second {
+	border: 2px solid $second;
+	background: $third;
+
+	&:focus,
+	&:hover {
+		border-color: darken($second, 5%);
+		background-color: darken($second, 5%);
+	}
+}
+
+.btn-third {
+	border: 2px solid $third;
+	background: $third;
+
+	&:focus,
+	&:hover {
+		border-color: darken($third, 5%);
+		background-color: darken($third, 5%);
+	}
+}
+
+.btn-prime-outline {
+	border: 2px solid $prime;
+	color: $prime;
+	background: transparent;
+
+	&:focus,
+	&:hover {
+		background-color: $prime;
+		color: $white;
+	}
+}
+
+.btn-white-outline {
+	border: 2px solid $white;
+	background: transparent;
+
+	&:focus,
+	&:hover {
+		background-color: $white;
+		color: $colorText;
+	}
+}
+
+// button size skins
+// -------------------------
+
+.btn-large {
+	padding: 2.5rem 6rem;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+}
+
+.btn-small {
+	padding: 1rem 2.5rem;
+	text-transform: uppercase;
+	font-size: 1rem;
+}

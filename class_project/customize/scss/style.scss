@@ -67,17 +67,19 @@ nav li{
 }
 
 .hero-section{
-  //background-color: #241e18;
-  background-color: #000000;
+  background-color: $second;
   background-image: url("../images/herobg.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
 
-.hero-section .btn:first-of-type,
-.services .btn{
+.hero-section .btn:first-of-type{
   margin: 0 auto 6rem;
+}
+
+.services .btn{
+  margin: 5rem auto 10rem;
 }
 
 .hero-section p:first-of-type{
@@ -89,29 +91,36 @@ nav li{
 }
 
 
-.design > .circle,
-.development > .circle,
-.research > .circle{
+.design > a,
+.development > a,
+.research > a{
   height: 16.5rem;
   width: 16.5rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  margin-bottom: 5rem;
   background-color: $prime;
 }
 
-.design > .circle{
-  background-image: url("../images/works/workexample6.png");
+.design > a:hover,
+.development > a:hover,
+.research > a:hover{
+  background-color: $third;
 }
 
-.development > .circle{
-  background-image: url("../images/works/workexample7.png");
+.design > a{
+  padding-top: 5.5rem;
+}
+.development > a {
+  padding-top: 6rem;
+}
+.research > a{
+  padding-top: 6rem;
 }
 
-.research > .circle{
-  background-image: url("../images/works/workexample8.png");
+.design > p,
+.development > p,
+.research > p{
+  color: $colorTextLightGray;
 }
-
 
 
 .work-list >li{

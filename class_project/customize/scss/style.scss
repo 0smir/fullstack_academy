@@ -128,9 +128,12 @@ nav li{
 }
 
 figure{
+  height: auto;
+  width: auto;
   border: 2px solid $pampas;
   padding: .4rem;
   border-radius: 3px;
+  overflow: hidden;
 }
 
 figure > img{
@@ -159,7 +162,7 @@ footer .main{
 }
 
 .social p{
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
 }
 
 

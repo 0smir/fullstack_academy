@@ -14,15 +14,15 @@
 	padding-top: $containerVerIndent;
 	padding-bottom: $containerVerIndent;
 	margin: 0 auto;
-	min-height: 73rem; //TODO: delete when all will be ready
+	//border: 1px solid yellow;
+	//min-height: 73rem; //TODO: delete when all will be ready
 }
 
 
 .navbar{
 	height: 10rem;
 	width: 100%;
-	right: 0;
-	left: 0;
+	top:0;
 	padding: 3.5rem 0;
 	z-index: 1030;
 	border: 1px solid yellow;

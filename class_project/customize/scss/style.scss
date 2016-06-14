@@ -128,17 +128,19 @@ nav li{
 }
 
 figure{
-  height: auto;
-  width: auto;
+  height: 19.8rem;
+  width: 26.2rem;
+  margin: 0 auto;
+  box-sizing: border-box;
   border: 2px solid $pampas;
-  padding: .4rem;
+  padding: 5px;
   border-radius: 3px;
   overflow: hidden;
 }
 
 figure > img{
-  height: 20rem;
-  width: 26.2rem;
+  height: 18.4rem;
+  max-width: 24.8rem;
 }
 
 figcaption{

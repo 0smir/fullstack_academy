@@ -172,13 +172,9 @@ footer .main{
   background-color: $second;
 }
 
-.social ul{
-  width: 42rem;
-}
 
 .social li{
   padding: 0;
-  margin-right: 3rem;
 }
 
 .social li>a img{
@@ -189,6 +185,83 @@ footer .main{
   opacity: 1;
 }
 
-@media screen and (max-width: 959px) and (min-width: 768px){
+@media screen and (max-width: 320px){
+
+  .social ul{
+    max-width: 19rem;
+  }
+
+  .social li {
+    margin: 0 1.5rem 1.5rem;
+  }
+
+  .social li:nth-child(2n){
+    padding: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 479px){
+
+  .social ul{
+    max-width: 19rem;
+  }
+
+  .social li {
+    margin: 0 1.5rem 1.5rem;
+  }
+
+  .social li:nth-child(2n){
+    padding: 0;
+    margin-right: 0;
+  }
 
 }
+
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+  .social ul{
+    max-width: 42rem;
+  }
+
+  .social li {
+    margin: 0 1.5rem 1.5rem;
+  }
+}
+
+@media screen and(min-width: 768px) and (max-width: 959px){
+
+  .social ul{
+    max-width: 42rem;
+  }
+
+  .social li{
+    margin: 0 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 960px){
+  .social ul{
+    max-width: 42rem;
+  }
+
+  .social li{
+    margin: 0 1.5rem 0;
+  }
+
+  .social li:last-child{
+    margin-right: 0;
+  }
+}
+
+@media screen  and (min-width: 1200px){
+  .social ul{
+    max-width: 42rem;
+  }
+
+  .social li{
+    margin: 0 1.5rem 0;
+  }
+}
+

@@ -8,357 +8,369 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-icomoon/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.4/css/jquery.mmenu.all.min.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.4/js/jquery.mmenu.all.min.js"></script>
+
+    <script src="js/menu/mobile-menu.js"></script>
+    <script src="js/menu/menu.js"></script>
 </head>
 <body>
-<header class="navbar fixed">
-    <div class="main">
-        <div class="row">
-            <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3">
-                <a href="#"><img src="images/logo-main.png" alt="logo"></a>
-            </div>
-            <div class="col-xs-3 col-xs-offset-1 hidden-sm hidden-md hidden-lg">
-                <button class="burger">
-                    <span class="stick pull-left"></span>
-                    <span class="stick pull-left"></span>
-                    <span class="stick pull-left"></span>
-                </button>
-            </div>
-            <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-                <ul class="mob-menu pull-right">
-                    <li class="inline-block"><a href="#">Home</a></li>
-                    <li class="inline-block"><a href="#">About</a></li>
-                    <li class="inline-block"><a href="#">Services</a></li>
-                    <li class="inline-block"><a href="#">Blog</a></li>
-                    <li class="inline-block"><a href="#">Contact</a></li>
-                </ul>
-
-            </div>
-            <nav class="hidden-xs col-sm-9 col-md-9 col-lg-9">
-                <ul class="pull-right">
-                    <li class="inline-block"><a href="#">Home</a></li>
-                    <li class="inline-block"><a href="#">About</a></li>
-                    <li class="inline-block"><a href="#">Services</a></li>
-                    <li class="inline-block"><a href="#">Blog</a></li>
-                    <li class="inline-block"><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+<div id="mobile-header" class="col-xs-12 hidden-sm hidden-md hidden-lg fixed">
+    <div class="col-xs-8 col-sm-3 col-md-3 col-lg-3">
+        <a href="#"><img src="images/logo-main.png" alt="logo"></a>
     </div>
-</header>
-<div class="hero-section">
-    <div class="main container">
-        <div class="row">
-            <div class="col-xs-12 col-md-12 col-lg-12">
-                <p class="text-center text-uppercase small-text prime">
-                    web designer and developer
-                </p>
-                <h1 class="text-center h1 white">
-                    My name is John.<br>
-                    I designe beautifil web sites.
-                </h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-6 col-lg-6">
-                <div class="btn btn-outline btn-white-outline">
-                    Learn More
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-6">
-                <div class="btn btn-third">
-                    Contact me
-                </div>
-            </div>
-        </div>
+    <div class="col-xs-3 col-xs-offset-1 hidden-sm hidden-md hidden-lg">
+        <button id="burger">
+            <span class="stick pull-left"></span>
+            <span class="stick pull-left"></span>
+            <span class="stick pull-left"></span>
+        </button>
     </div>
-</div>   <!-- hero-section-->
-<div class="services bg-white">
-    <div class="main container">
-        <div class="row">
-            <div class="col-xs-12 col-lg-12">
-                <h2 class="text-center h2">My Services</h2>
-                <p class="text-center text-uppercase small-text prime">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-4 col-lg-4">
-                <div class="design">
-                    <a class="block circle center" href="#">
-                        <img class="img-responsive center" src="images/services_icons/design-icon.png" alt="design">
-                    </a>
-
-
-                    <h4 class="text-center h4">Graphic Design</h4>
-                    <p class="text-center">
-                        It is a long established fact that a reader will be distracted by the readable content
-                        of a page when looking at its layout.
-                    </p>
-                    <div class="btn btn-prime-outline center">learn more</div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4 col-lg-4">
-                <div class="development">
-                    <a class="block circle center" href="#">
-                        <img class="img-responsive  center" src="images/services_icons/development-icon.png" alt="development">
-                    </a>
-                    <h4 class="text-center h4">Web Development</h4>
-                    <p class="text-center">
-                        It is a long established fact that a reader will be distracted by the readable content
-                        of a page when looking at its layout.
-                    </p>
-                    <div class="btn btn-prime-outline center">learn more</div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4 col-lg-4">
-                <div class="research">
-                    <a class="block circle center" href="#">
-                        <img class="img-responsive  center" src="images/services_icons/research-icon.png" alt="research">
-                    </a>
-                    <h4 class="text-center h4">Research</h4>
-                    <p class="text-center">
-                        It is a long established fact that a reader will be distracted by the readable content
-                        of a page when looking at its layout.
-                    </p>
-                    <div class="btn btn-prime-outline center">learn more</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> <!-- services -->
-<div class="adout bg-gray">
-    <div class="main container">
-        <div class="row">
-            <div class="col-xs-12 col-md-12 col-lg-12">
-                <h2 class="h2 text-center text-capitalize">About me</h2>
-                <p class="text-center text-uppercase small-text prime">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-lg-4">
-                <div class="myphoto">
-                    <img class="center block img-circle" src="images/portret.png" alt="myPortret">
-                    <h3 class="text-center h3">John Freelancer</h3>
-                    <p class="text-center small-text">
-                        Graphic Designer / Web Developer
-                    </p>
-                    <p class="text-center">
-                        <a class="link" href="#">@Johnfreelancer</a>
-                    </p>
-
-                </div>
-            </div>
-            <div class="col-xs-12 col-lg-4">
-                <p class="text-bold">
-                    It is a long established fact that a reader will be distracted by the readable content
-                    of a page when looking at its layout.
-                </p>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content
-                    of a page when looking at its layout.
-                </p>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content
-                    of a page when looking at its layout.
-                </p>
-
-            </div>
-            <div class="col-xs-12 col-lg-4">
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content
-                    of a page when looking at its layout.
-                </p>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content
-                    of a page when looking at its layout.
-                </p>
-                <p class="text-left">
-                    <a class="link" href="#"> Read more about me...</a>
-                </p>
-
-            </div>
-        </div>
-
-    </div>
-</div> <!-- my-work -->
-<div class="my-work">
-    <div class="main container">
-        <div class="row">
-            <div class="col-xs-12 col-lg-12">
-                <h2 class="text-center text-capitalize">my work</h2>
-                <p class="text-center text-uppercase small-text prime">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </p>
-            </div>
-        </div>
-        <!--<div class="row">-->
-        <!--<div class="col-xs-12 col-lg-12">-->
-        <ul class="work-list row">
-            <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <figure class="relative">
-                    <img class="block" src="images/works/workexample1.png" alt="example">
-                    <figcaption class="absolute white">
-                        <h4 class="text-center">Project name</h4>
-                        <div class="btn btn-small btn-white-outline center">See more projects</div>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <figure class="relative">
-                    <img class="block" src="images/works/workexample2.png" alt="example">
-                    <figcaption class="absolute white">
-                        <h4 class="text-center">Project name</h4>
-                        <div class="btn btn-small btn-white-outline center">See more projects</div>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <figure class="relative">
-                    <img class="block" src="images/works/workexample3.png" alt="example">
-                    <figcaption class="absolute white">
-                        <h4 class="text-center">Project name</h4>
-                        <div class="btn btn-small btn-white-outline center">See more projects</div>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <figure class="relative">
-                    <img class="block" src="images/works/workexample4.png" alt="example">
-                    <figcaption class="absolute white">
-                        <h4 class="text-center">Project name</h4>
-                        <div class="btn btn-small btn-white-outline center">See more projects</div>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <figure class="relative">
-                    <img class="block" src="images/works/workexample5.png" alt="example">
-                    <figcaption class="absolute white">
-                        <h4 class="text-center">Project name</h4>
-                        <div class="btn btn-small btn-white-outline center">See more projects</div>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <figure class="relative">
-                    <img class="block" src="images/works/workexample6.png" alt="example">
-                    <figcaption class="absolute white">
-                        <h4 class="text-center">Project name</h4>
-                        <div class="btn btn-small btn-white-outline center">See more projects</div>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <figure class="relative">
-                    <img class="block" src="images/works/workexample7.png" alt="example">
-                    <figcaption class="absolute white">
-                        <h4 class="text-center">Project name</h4>
-                        <div class="btn btn-small btn-white-outline center">See more projects</div>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <figure class="relative">
-                    <img class="block" src="images/works/workexample8.png" alt="example">
-                    <figcaption class="absolute white">
-                        <h4 class="text-center">Project name</h4>
-                        <div class="btn btn-small btn-white-outline center">See more projects</div>
-                    </figcaption>
-                </figure>
-            </li>
+    <div id="menu" class="col-xs-12 hidden-sm hidden-md hidden-lg">
+        <ul class="mob-menu">
+            <li class="inline-block"><a href="#">Home</a></li>
+            <li class="inline-block"><a href="#">About</a></li>
+            <li class="inline-block"><a href="#">Services</a></li>
+            <li class="inline-block"><a href="#">Blog</a></li>
+            <li class="inline-block"><a href="#">Contact</a></li>
         </ul>
-        <!--</div>-->
-        <!--</div>-->
-        <div class="row">
-            <div class="col-xs-12 col-lg-12">
-                <div class="btn btn-prime-outline btn-large center">see more projects</div>
-            </div>
-        </div>
     </div>
-</div> <!-- my-work -->
-<div class="reviews bg-gray">
-    <div class="main container">
-        <div class="row">
-            <div class="col-xs-12 col-lg-12">
-                <h2 class="text-center text-capitalize">what my clients say</h2>
-                <p class="text-center text-uppercase small-text prime">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </p>
-                <blockquote class="quote">
-                    &#8220;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.&#8221;
-                </blockquote>
-            </div>
-            <div class="col-xs-12 col-lg-12">
-                слайдер
-            </div>
-        </div>
-    </div>
-</div> <!-- reviews -->
-<footer>
-    <div class="contact-me">
+</div>
+<div class="wrapper">
+    <div id="header" class="navbar fixed">
         <div class="main container">
             <div class="row">
-                <div class="col-xs-12 col-lg-12">
-                    <h1 class="text-center text-uppercase">Get in touch</h1>
-                    <p class="text-center text-uppercase small-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
+                    <a href="#"><img src="images/logo-main.png" alt="logo"></a>
+                </div>
+                <nav class="hidden-xs col-sm-9 col-md-9 col-lg-9">
+                    <ul class="pull-right">
+                        <li class="inline-block"><a href="#">Home</a></li>
+                        <li class="inline-block"><a href="#">About</a></li>
+                        <li class="inline-block"><a href="#">Services</a></li>
+                        <li class="inline-block"><a href="#">Blog</a></li>
+                        <li class="inline-block"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="main container my-container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <p class="text-center text-uppercase small-text prime">
+                        web designer and developer
                     </p>
+                    <h1 class="text-center h1 white">
+                        My name is John.<br>
+                        I designe beautifil web sites.
+                    </h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-lg-12">
-                    <div class="btn btn-third center">
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <div class="btn btn-outline btn-white-outline">
+                        Learn More
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <div class="btn btn-third">
                         Contact me
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="social">
-        <div class="main container">
+    </div>   <!-- hero-section-->
+    <div class="services bg-white">
+        <div class="main container my-container">
             <div class="row">
                 <div class="col-xs-12 col-lg-12">
-                    <p class="text-center small-text ">
-                        &#169; Copyright 2014 John's Website. All right reserved.
+                    <h2 class="text-center h2">My Services</h2>
+                    <p class="text-center text-uppercase small-text prime">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <ul class="center">
-                        <li class="text-center inline-block">
-                            <a href="#">
-                                <img src="images/social_icon/glob.png" alt="dribble">
-                            </a>
-                        </li>
-                        <li class="text-center inline-block">
-                            <a href="#">
-                                <img src="images/social_icon/inst.png" alt="instagram">
-                            </a>
-                        </li>
-                        <li class="text-center inline-block">
-                            <a href="http://ruseller.com/lessons.php?rub=2&id=2159">
-                                <img  src="images/social_icon/mail.png" alt="Email">
-                            </a>
-                        </li>
-                        <li class="text-center inline-block">
-                            <a href="http://ruseller.com/lessons.php?rub=2&id=2159">
-                                <img src="images/social_icon/rss.png" alt="RSS">
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <div class="design">
+                        <a class="block circle center" href="#">
+                            <img class="img-responsive center" src="images/services_icons/design-icon.png" alt="design">
+                        </a>
+
+
+                        <h4 class="text-center h4">Graphic Design</h4>
+                        <p class="text-center">
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout.
+                        </p>
+                        <div class="btn btn-prime-outline center">learn more</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <div class="development">
+                        <a class="block circle center" href="#">
+                            <img class="img-responsive  center" src="images/services_icons/development-icon.png" alt="development">
+                        </a>
+                        <h4 class="text-center h4">Web Development</h4>
+                        <p class="text-center">
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout.
+                        </p>
+                        <div class="btn btn-prime-outline center">learn more</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <div class="research">
+                        <a class="block circle center" href="#">
+                            <img class="img-responsive  center" src="images/services_icons/research-icon.png" alt="research">
+                        </a>
+                        <h4 class="text-center h4">Research</h4>
+                        <p class="text-center">
+                            It is a long established fact that a reader will be distracted by the readable content
+                            of a page when looking at its layout.
+                        </p>
+                        <div class="btn btn-prime-outline center">learn more</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="js/menu/menu.js"></script>
+    </div> <!-- services -->
+    <div class="adout bg-gray">
+        <div class="main container my-container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <h2 class="h2 text-center text-capitalize">About me</h2>
+                    <p class="text-center text-uppercase small-text prime">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-lg-4">
+                    <div class="myphoto">
+                        <img class="center block img-circle" src="images/portret.png" alt="myPortret">
+                        <h3 class="text-center h3">John Freelancer</h3>
+                        <p class="text-center small-text">
+                            Graphic Designer / Web Developer
+                        </p>
+                        <p class="text-center">
+                            <a class="link" href="#">@Johnfreelancer</a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <p class="text-bold">
+                        It is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout.
+                    </p>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout.
+                    </p>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout.
+                    </p>
+
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout.
+                    </p>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout.
+                    </p>
+                    <p class="text-left">
+                        <a class="link" href="#"> Read more about me...</a>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div> <!-- my-work -->
+    <div class="my-work">
+        <div class="main container my-container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-12">
+                    <h2 class="text-center text-capitalize">my work</h2>
+                    <p class="text-center text-uppercase small-text prime">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                </div>
+            </div>
+            <!--<div class="row">-->
+            <!--<div class="col-xs-12 col-lg-12">-->
+            <ul class="work-list row">
+                <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <figure class="relative">
+                        <img class="block" src="images/works/workexample1.png" alt="example">
+                        <figcaption class="absolute white">
+                            <h4 class="text-center">Project name</h4>
+                            <div class="btn btn-small btn-white-outline center">See more projects</div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <figure class="relative">
+                        <img class="block" src="images/works/workexample2.png" alt="example">
+                        <figcaption class="absolute white">
+                            <h4 class="text-center">Project name</h4>
+                            <div class="btn btn-small btn-white-outline center">See more projects</div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <figure class="relative">
+                        <img class="block" src="images/works/workexample3.png" alt="example">
+                        <figcaption class="absolute white">
+                            <h4 class="text-center">Project name</h4>
+                            <div class="btn btn-small btn-white-outline center">See more projects</div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <figure class="relative">
+                        <img class="block" src="images/works/workexample4.png" alt="example">
+                        <figcaption class="absolute white">
+                            <h4 class="text-center">Project name</h4>
+                            <div class="btn btn-small btn-white-outline center">See more projects</div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <figure class="relative">
+                        <img class="block" src="images/works/workexample5.png" alt="example">
+                        <figcaption class="absolute white">
+                            <h4 class="text-center">Project name</h4>
+                            <div class="btn btn-small btn-white-outline center">See more projects</div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <figure class="relative">
+                        <img class="block" src="images/works/workexample6.png" alt="example">
+                        <figcaption class="absolute white">
+                            <h4 class="text-center">Project name</h4>
+                            <div class="btn btn-small btn-white-outline center">See more projects</div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <figure class="relative">
+                        <img class="block" src="images/works/workexample7.png" alt="example">
+                        <figcaption class="absolute white">
+                            <h4 class="text-center">Project name</h4>
+                            <div class="btn btn-small btn-white-outline center">See more projects</div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="inline-block col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <figure class="relative">
+                        <img class="block" src="images/works/workexample8.png" alt="example">
+                        <figcaption class="absolute white">
+                            <h4 class="text-center">Project name</h4>
+                            <div class="btn btn-small btn-white-outline center">See more projects</div>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <!--</div>-->
+            <!--</div>-->
+            <div class="row">
+                <div class="col-xs-12 col-lg-12">
+                    <div class="btn btn-prime-outline btn-large center">see more projects</div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- my-work -->
+    <div class="reviews bg-gray">
+        <div class="main container my-container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-12">
+                    <h2 class="text-center text-capitalize">what my clients say</h2>
+                    <p class="text-center text-uppercase small-text prime">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                    <blockquote class="quote">
+                        &#8220;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.&#8221;
+                    </blockquote>
+                </div>
+                <div class="col-xs-12 col-lg-12">
+                    слайдер
+                </div>
+            </div>
+        </div>
+    </div> <!-- reviews -->
+    <footer>
+        <div class="contact-me">
+            <div class="main container my-container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12">
+                        <h1 class="text-center text-uppercase">Get in touch</h1>
+                        <p class="text-center text-uppercase small-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12">
+                        <div class="btn btn-third center">
+                            Contact me
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <div class="main container my-container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12">
+                        <p class="text-center small-text ">
+                            &#169; Copyright 2014 John's Website. All right reserved.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <ul class="center">
+                            <li class="text-center inline-block">
+                                <a href="#">
+                                    <img src="images/social_icon/glob.png" alt="dribble">
+                                </a>
+                            </li>
+                            <li class="text-center inline-block">
+                                <a href="#">
+                                    <img src="images/social_icon/inst.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="text-center inline-block">
+                                <a href="http://ruseller.com/lessons.php?rub=2&id=2159">
+                                    <img  src="images/social_icon/mail.png" alt="Email">
+                                </a>
+                            </li>
+                            <li class="text-center inline-block">
+                                <a href="http://ruseller.com/lessons.php?rub=2&id=2159">
+                                    <img src="images/social_icon/rss.png" alt="RSS">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>

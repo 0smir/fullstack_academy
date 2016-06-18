@@ -4,10 +4,10 @@ $(document).ready(function(){
 
 		$("[data-modal-name=" + modalName + "]").css({"display": "block"});
 	});
-
-	$('[data-modal="close"]').on("click", function(){
-		var modalName = $(this).attr("data-modal-name");
-		$("[data-modal-name=" + modalName + "]").css({"display": "none"});
 	
+	$(".close-modal").on("click", function(){
+		$('#modalForForm').css({"display": "none"});
 	});
+
+
 });

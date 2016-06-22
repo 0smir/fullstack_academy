@@ -9,5 +9,8 @@ $(document).ready(function(){
 		$('#modalForForm').css({"display": "none"});
 	});
 
+	$(".close-modal").on("click", function(){
+		$('#modalFormCallback').css({"display": "none"});
+	});
 
 });

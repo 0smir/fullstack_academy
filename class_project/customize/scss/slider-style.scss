@@ -1,0 +1,26 @@
+@import "core";
+
+.slider-wrapper{
+  min-width: 25rem;
+  max-width: 29.2rem;
+}
+
+
+
+.slider-wrapper .slick-dots li button:before{
+  width: 1.5rem;
+  height: 1.5rem;
+  content: ' ';
+  background-color: $white;
+  border-radius: 50%;
+  opacity: .75;
+}
+
+.slick-dots li.slick-active button:before {
+  width: 2rem;
+  height: 2rem;
+  content: ' ';
+  background-color: $green;
+  border-radius: 50%;
+  opacity: .75;
+}

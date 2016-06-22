@@ -27,6 +27,18 @@ nav li > a,
   border-bottom: 2px solid transparent;
 }
 
+.logo{
+  font-size: 2rem;
+  color: $white;
+}
+
+.logo:hover{
+  font-size: 2rem;
+  text-decoration: none;
+  color: $white;
+}
+
+
 #burger{
   width: 4rem;
   padding: 0.5rem;
@@ -87,9 +99,6 @@ nav li{
   margin: 5rem auto 10rem;
 }
 
-.hero-section p:first-of-type{
-  margin-top: 8rem;
-}
 
 .hero-section h1{
   margin: 10rem 0;

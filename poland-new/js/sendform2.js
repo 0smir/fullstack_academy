@@ -8,6 +8,7 @@ $(document).ready(function(){
 			type:'post',
 			data:$('#modalForm').serialize(),
 			success:function(){
+				
 			}
 		});
 	});

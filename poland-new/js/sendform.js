@@ -7,6 +7,7 @@ $(document).ready(function(){
 			type:'post',
 			data:$('#myForm').serialize(),
 			success:function(){
+				$('.result-form').find('span').addClass('succsess');	
 			}
 		});
 	});

@@ -8,12 +8,12 @@ $(document).ready(function () {
         }
     });
 
-    $("#mobile-header").removeClass("default");
-    $(window).scroll(function(){
-        if($(window).scrollTop() >200){
-            $("#mobile-header").addClass("default").fadeIn("fast");
-        } else {
-            $("#mobile-header").removeClass("default").fadeIn("fast");
-        }
-    });
+    // $("#mobile-header").removeClass("default");
+    // $(window).scroll(function(){
+    //     if($(window).scrollTop() >200){
+    //         $("#mobile-header").addClass("default").fadeIn("fast");
+    //     } else {
+    //         $("#mobile-header").removeClass("default").fadeIn("fast");
+    //     }
+    // });
 });

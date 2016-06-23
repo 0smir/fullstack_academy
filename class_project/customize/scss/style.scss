@@ -23,6 +23,32 @@ nav li > a{
   border-bottom: 2px solid transparent;
 }
 
+nav li > a:visited,
+.mob-menu li>a:visited{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255, 255, 255, .5);
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid transparent;
+}
+
+nav li > a:focus,
+.mob-menu li>a:focus{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 2px solid $prime;
+}
+
+nav li > a:hover,
+.mob-menu li>a:hover{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 2px solid $prime;
+}
+
 .logo{
   font-size: 2rem;
   color: $white;
@@ -51,14 +77,6 @@ nav li > a{
 
 .burger:hover .stick{
   background-color: rgba(255, 255, 255, .8);
-}
-
-nav li > a:hover,
-.mob-menu li>a:hover{
-  text-transform: uppercase;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 1);
-  border-bottom: 2px solid $prime;
 }
 
 

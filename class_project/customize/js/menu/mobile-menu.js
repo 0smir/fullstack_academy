@@ -1,19 +1,17 @@
 $(document).ready(function( $ ) {
 
-    $.mmenu.configuration.classNames.fixedElements = {
-        fixed: "Fixed"
-    };
-
 
     $("#menu").mmenu({
         "offCanvas": {
             "position": "right"
-            // "zposition": "next"
         },
         "extensions": [
             "theme-dark"
         ],
         "navbars": [
+            {
+                "position": "top"
+            },
             {
                 "position": "bottom",
                 "content": [
@@ -24,6 +22,7 @@ $(document).ready(function( $ ) {
             }
         ]
     });
+
 
     var API = $("#menu").data("mmenu");
 

@@ -27,6 +27,7 @@
     <script src="js/menu/mobile-menu.js"></script>
     <script src="js/menu/menu.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
 </head>
 <body>
 <nav id="menu">
@@ -84,7 +85,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-6">
-                        <div class="btn btn-third">
+                        <div class="btn btn-third" data-modal="show" data-modal-name="modal-form">
                             Contact me
                         </div>
                     </div>
@@ -361,7 +362,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-lg-12">
-                            <div class="btn btn-third center">
+                            <div class="btn btn-third center" data-modal="show" data-modal-name="modal-form">
                                 Contact me
                             </div>
                         </div>
@@ -407,7 +408,7 @@
             </div>
         </footer>
     </div>
-    <div class="modal">
+    <div class="modal" data-modal-name="modal-form">
         <div class="container my-container modal-container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

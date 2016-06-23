@@ -1,0 +1,30 @@
+.modal{
+	background-color: rgba(5, 0, 10, 0.8);
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.modal h3{
+	margin-top: 100px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.modal .close-modal{
+	border-radius: 5px;
+	margin: 15px;
+	border: 1px solid rgb(151, 151, 151);
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: inset -1px -2px 4px 2px rgb(198, 198, 198);
+	color: rgb(35, 35, 35);
+}
+
+.modal .fa-times{
+	font-size: 19px;
+	font-weight: bold;
+	padding: 5px 6px;
+}

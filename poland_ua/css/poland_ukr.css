@@ -1,0 +1,9 @@
+#poland_slide1 {
+    background-image: url(../img/poland_03.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    color: #fff;
+    padding-bottom: 3rem;
+}

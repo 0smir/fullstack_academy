@@ -1,0 +1,71 @@
+.slick-dotted.slick-slider{
+    margin: 0;
+}
+
+.slick-prev, .slick-next {
+	z-index: 100;
+	bottom:0;
+}
+
+.slick-prev {
+    left: 25px;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+
+.slick-dots{
+    bottom: 15px;
+}
+
+.slick-dots li {
+    margin: 0 15px;
+}
+
+.slick-dots li button:before{
+    width: 40px;
+    height: 10px;
+    content: ' ';
+    background-color: #fff;
+}
+
+.slick-dots li.slick-active button:before{
+
+}
+
+
+
+
+#poland_slide1 {
+  background-image: url(../img/poland_03.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 700px;
+  color: #fff;
+  padding-bottom: 3rem;
+}
+
+#poland_slide2{
+  background-image: url(../img/poland_01.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 700px;
+  color: #fff;
+  padding-bottom: 3rem;
+}
+
+#poland_slide3{
+  background-image: url(../img/poland_cut2.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 700px;
+  color: #fff;
+  padding-bottom: 3rem;
+}
+
+

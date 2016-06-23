@@ -14,9 +14,14 @@
 	padding-top: $containerVerIndent;
 	padding-bottom: $containerVerIndent;
 	margin: 0 auto;
-	border: 1px solid yellow;
 	//min-height: 73rem; //TODO: delete when all will be ready
 }
+
+
+.modal-container{
+	max-width: 81rem;
+}
+
 
 
 .navbar{
@@ -25,8 +30,27 @@
 	top:0;
 	padding: 3.5rem 0;
 	z-index: 1030;
-	//background-color: black;
 }
+
+
+
+.modal{
+	font-family: 'Open Sans', sans-serif;
+	background-color: rgba(37, 30, 24, .9);
+	color: $white;
+	//display: none;
+	//position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1050;
+}
+
+
+
+
+
 
 
 

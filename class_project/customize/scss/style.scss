@@ -4,25 +4,21 @@
 
 
 body,
-.header{
+#header{
   font-family: 'Merriweather', serif;
 }
 
-#mobile-header{
-  z-index: 1030;
-}
 
 ul{
   margin: 0;
   padding: 0;
 }
 
-nav li > a,
-.mob-menu li>a{
+nav li > a{
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  color: rgba(255, 255, 255, .4);
+  color: rgba(255, 255, 255, .5);
   padding-bottom: 0.4rem;
   border-bottom: 2px solid transparent;
 }
@@ -70,18 +66,10 @@ nav li{
   margin-right: 3rem;
 }
 
-.mob-menu li{
-  margin-right: 1rem;
-}
 
-.mob-menu{
-  max-width: 300px;
-  display: none;
-}
-
-.main{
-  border: 1px solid red;
-}
+//.main{
+//  border: 1px solid red;
+//}
 
 .hero-section{
   background-color: $second;
@@ -199,13 +187,31 @@ footer .main{
   opacity: 1;
 }
 
+input,
+textarea{
+  width: 100%;
+  max-width: 45.5rem;
+  padding: 6px 10px;
+  margin-bottom: 1.5rem;
+  color: $colorTextDarkGray;
+  background-color: $white;
+  border: 1px solid $silverChalice;
+  border-radius: $radius-min;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+input{
+  min-height: 4.5rem;
+}
+
+textarea{
+  max-height: 19rem;
+}
+
+
 @media screen and (max-width: 320px){
-  .navbar {
-    height: 0;
-    width: 0;
-    padding: 0;
-    z-index: 0;
-  }
+
 
   .social ul{
     max-width: 19rem;
@@ -219,16 +225,15 @@ footer .main{
     padding: 0;
     margin-right: 0;
   }
+
+  #contactForm input[type="submit"]{
+    margin: 0 auto;
+  }
+
 }
 
 @media screen and (min-width: 321px) and (max-width: 479px){
 
-  .navbar {
-    height: 0;
-    width: 0;
-    padding: 0;
-    z-index: 0;
-  }
 
 
   .social ul{
@@ -242,18 +247,16 @@ footer .main{
   .social li:nth-child(2n){
     padding: 0;
     margin-right: 0;
+  }
+
+  #contactForm input[type="submit"]{
+    margin: 0 auto;
   }
 
 }
 
 
 @media screen and (min-width: 480px) and (max-width: 767px){
-  .navbar {
-    height: 0;
-    width: 0;
-    padding: 0;
-    z-index: 0;
-  }
 
   .social ul{
     max-width: 42rem;
@@ -262,6 +265,11 @@ footer .main{
   .social li {
     margin: 0 1.5rem 1.5rem;
   }
+
+  #contactForm input[type="submit"]{
+    margin: 0 auto;
+  }
+
 }
 
 @media screen and(min-width: 768px) and (max-width: 959px){
@@ -272,6 +280,10 @@ footer .main{
 
   .social li{
     margin: 0 1.5rem 0;
+  }
+
+  #contactForm input[type="submit"]{
+    margin: 0 auto;
   }
 }
 

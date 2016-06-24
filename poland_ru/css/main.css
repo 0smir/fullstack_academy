@@ -26,7 +26,7 @@ p{
     font-weight: 700;
 }
 
-.logo h1 span,
+.logo h1,
 #poland_slide1 h2 ,
 #poland_slide1 h3 ,
 #poland_slide2 h2 ,
@@ -35,6 +35,11 @@ p{
 #poland_slide3 h3 {
     padding: 0 1rem;
     background-color: rgba(5, 0, 10, 0.6);
+}
+
+.logo h1 span{
+    text-shadow: 4px 4px 4px rgba(5, 0, 10, 0.6);
+
 }
 
 
@@ -214,6 +219,36 @@ form textarea {
 /*@media screen  and (min-width: 1200px){*/
 
 /*}*/
+
+@media screen and (min-width: 321px) and (max-width: 479px) {
+
+    h1 {
+        font-size: 3.2rem;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 3.2rem;
+        line-height: 1.25;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+        line-height: 1.3;
+    }
+
+    .modal h3{
+        margin-top: 50px;
+    }
+
+    #poland_slide1, #poland_slide2, #poland_slide3{
+        min-height: 67rem;
+    }
+
+    .callback{
+        margin: 0 auto;
+    }
+
+}
 
 @media screen and (max-width: 320px){
     h1 {

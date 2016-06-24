@@ -201,24 +201,14 @@ form textarea {
 }
 
 
-/*@media screen and (min-width: 321px) and (max-width: 479px) {*/
-/*}*/
+@media screen and (min-width: 768px) and (max-width: 959px){
 
-/*@media screen and (min-width: 480px) and (max-width: 767px){*/
+      #poland_slide1, #poland_slide2, #poland_slide3{
+        min-height: 60rem;
+    }
+}
 
-/*}*/
 
-/*@media screen and (min-width: 768px) and (max-width: 959px){*/
-
-/*}*/
-
-/*@media screen and (max-width: 1199px) and (min-width: 960px) {*/
-
-/*}*/
-
-/*@media screen  and (min-width: 1200px){*/
-
-/*}*/
 @media screen and (min-width: 480px) and (max-width: 767px){
     #poland_slide1, #poland_slide2, #poland_slide3{
         min-height: 60rem;
@@ -231,6 +221,7 @@ form textarea {
         font-size: 3.2rem;
         line-height: 1.2;
     }
+
     h2 {
         font-size: 3.2rem;
         line-height: 1.25;

@@ -146,6 +146,7 @@ p{
     content: "\2043";
     margin-left: -1ex;
     margin-right: 1ex;
+
 }
 
 .reviews {
@@ -201,8 +202,7 @@ form textarea {
     display: block;
 }
 
-/*@media screen and (min-width: 321px) and (max-width: 479px) {*/
-/*}*/
+
 
 /*@media screen and (min-width: 480px) and (max-width: 767px){*/
 
@@ -219,6 +219,12 @@ form textarea {
 /*@media screen  and (min-width: 1200px){*/
 
 /*}*/
+@media screen and (min-width: 480px) and (max-width: 767px){
+    #poland_slide1, #poland_slide2, #poland_slide3{
+        min-height: 60rem;
+    }
+}
+
 @media screen and (min-width: 321px) and (max-width: 479px) {
 
     h1 {

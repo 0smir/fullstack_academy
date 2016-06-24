@@ -2,7 +2,5 @@
 *.iml
 .idea
 *.xml
-.css
-css
 *.[ao]
 node_modules

@@ -19,6 +19,10 @@
     right: 25px;
 }
 
+.slick-prev, .slick-next{
+    top: 60%;
+}
+
 
 .slick-dots{
     bottom: 15px;

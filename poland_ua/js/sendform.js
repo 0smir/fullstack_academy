@@ -18,10 +18,10 @@ $(document).ready(function(){
 			url:'https://formspree.io/o.v.smirnova1987@gmail.com',
 			type:'post',
 			data: {
-				name: $('[name="name"]').value(),
-				tel: $('[name="phone"]').value(),
-				email: $('[name="mail"]').value(),
-				comment: $('[name="comment"]').value()
+				name: $('input[name="name"]').value(),
+				tel: $('input[name="phone"]').value(),
+				email: $('input[name="mail"]').value(),
+				comment: $('input[name="comment"]').value()
 			},
 			dataType: 'json'
 		}).error(function(jqXHR, status, error){

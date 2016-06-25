@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
 	var succsessText = 'Дані успішно відправлені. Дякую за звернення у візовий центр &laquo; VISA-SVIT &raquo;',
-		errorText = 'Увага! Виникла помилка:' + xhr.responseCode + '. Будь ласка, спробуйте ще раз!';
+		errorText = 'Увага! Виникла помилка. Будь ласка, спробуйте ще раз!';
 
 	$('#myForm').submit(function(event){
 		event.preventDefault();

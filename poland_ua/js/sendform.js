@@ -14,8 +14,9 @@ $(document).ready(function(){
 		}).error(function(jqXHR, status, error){
 			document.getElementsByClassName('results').innerHTML= errorText;
 		}). success(function(data, status, jqXHR) {
-			document.getElementsByClassName('results').innerHTML= succsessText;
 			$(".results").addClass('success');
+			document.getElementsByClassName('results').innerHTML= succsessText;
+
 			$('#myForm').find('input[name="name"], input[name="phone"], input[name="mail"], textarea[name="comment"]').val('');
 		});
 	});

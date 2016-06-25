@@ -192,17 +192,17 @@ form textarea {
     margin-top: 2rem;
 }
 
-.results{
-    display: none;
+.success,
+.error{
     color: #ffffff;
 }
 
 .success{
-    display: block;
+    display: none;
     background-color: #96ddc4;
 }
 .error{
-    display: block;
+    display: none;
     background-color: #d74c49;
 }
 

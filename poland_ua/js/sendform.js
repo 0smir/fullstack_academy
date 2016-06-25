@@ -8,12 +8,16 @@ $(document).ready(function(){
 			data: $('#myForm').serialize(),
 			dataType: 'json'
 		}).error(function(jqXHR, status, error){
-			$(".results:last-of-type").addClass('error');
-			$(".results:first-of-type").removeClass('error').delay(5000);
+			// $(".results:last-of-type").addClass('error');
+			// $(".results:first-of-type").removeClass('error').delay(5000);
+			$(".error").fadeIn("slow").delay(5000);
+			$(".error").fadeOut(3000);
 		}). success(function(data, status, jqXHR) {
 			$('#myForm').find('input[name="name"], input[name="phone"], input[name="mail"], textarea[name="comment"]').val('');
-			$(".results:first-of-type").addClass('success').delay(5000);
-			$(".results:first-of-type").removeClass('success');
+			$(".succses").fadeIn("slow").delay(5000);
+			$(".succses").fadeOut(3000);
+			// $(".results:first-of-type").addClass('success').delay(5000);
+			// $(".results:first-of-type").removeClass('success');
 		});
 	});
 

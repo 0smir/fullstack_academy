@@ -14,8 +14,8 @@ $(document).ready(function(){
 			$(".error").fadeOut(3000);
 		}). success(function(data, status, jqXHR) {
 			$('#myForm').find('input[name="name"], input[name="phone"], input[name="mail"], textarea[name="comment"]').val('');
-			$(".succses").fadeIn("slow", function () {
-				$(".succses").fadeOut(3000);
+			$(".succes").fadeIn("slow", function () {
+				$(".succes").fadeOut(3000);
 			});
 			// $(".results:first-of-type").addClass('success').delay(5000);
 			// $(".results:first-of-type").removeClass('success');

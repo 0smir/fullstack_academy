@@ -1,16 +1,8 @@
 $(document).ready(function(){
 
-	// $('#myForm').submit(function(e){
-	// 	e.preventDefault();
-	// 	$.ajax({
-	// 		url:'https://formspree.io/o.v.smirnova1987@gmail.com',
-	// 		type:'post',
-	// 		data:$('#myForm').serialize(),
-	// 		success:function(){
-	// 			$('.result-form').find('span').addClass('succsess');
-	// 		}
-	// 	});
-	// });
+
+	var succsessText = 'Дані успішно відправлені. Дякую за звернення у візовий центр &laquo; VISA-SVIT &raquo;',
+		errorText = 'Увага! Виникла помилка:' + xhr.responseCode + '. Будь ласка, спробуйте ще раз!';
 
 	$('#myForm').submit(function(event){
 		event.preventDefault();
@@ -18,18 +10,13 @@ $(document).ready(function(){
 			url:'https://formspree.io/o.v.smirnova1987@gmail.com',
 			type:'post',
 			data: $('#myForm').serialize(),
-			// {
-			// 	name: $('input[name="name"]').value(),
-			// 	tel: $('input[name="phone"]').value(),
-			// 	email: $('input[name="mail"]').value(),
-			// 	comment: $('input[name="comment"]').value()
-			// },
 			dataType: 'json'
 		}).error(function(jqXHR, status, error){
-			alert('Uh oh, something went wrong. Please try again.');
+			document.getElementsByClassName('results').innerHTML= errorText;
 		}). success(function(data, status, jqXHR) {
-			alert('Thank you for your message. Kitty will get back to you soon.');
-			// $('#myForm').find('[name="name"], #js-message').val('');
+			document.getElementsByClassName('results').innerHTML= succsessText;
+			$(".results").addClass('success');
+			$('#myForm').find('input[name="name"], input[name="phone"], input[name="mail"], input[name="comment"]').val('');
 		});
 	});
 

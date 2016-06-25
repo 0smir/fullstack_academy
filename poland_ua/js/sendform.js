@@ -12,8 +12,8 @@ $(document).ready(function(){
 			$(".results:first-of-type").removeClass('error').delay(5000);
 		}). success(function(data, status, jqXHR) {
 			$('#myForm').find('input[name="name"], input[name="phone"], input[name="mail"], textarea[name="comment"]').val('');
-			$(".results:first-of-type").addClass('success');
-			$(".results:first-of-type").removeClass('success').delay(5000);
+			$(".results:first-of-type").addClass('success').delay(5000);
+			$(".results:first-of-type").removeClass('success');
 		});
 	});
 

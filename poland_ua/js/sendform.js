@@ -9,12 +9,12 @@ $(document).ready(function(){
 			dataType: 'json'
 		}).error(function(jqXHR, status, error){
 				$(".error").fadeIn("slow", function(){
-				$(".error").fadeOut(15000);
+				$(".error").fadeOut(10000);
 			});
 		}).success(function(data, status, jqXHR) {
 				$('#myForm').find('input[name="name"], input[name="phone"], input[name="mail"], textarea[name="comment"]').val('');
 				$(".success").fadeIn("slow", function () {
-				$(".success").fadeOut(15000);
+				$(".success").fadeOut(10000);
 			});
 		});
 	});

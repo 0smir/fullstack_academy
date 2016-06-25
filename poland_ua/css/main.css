@@ -35,7 +35,6 @@ p{
 #poland_slide3 h3 {
     padding: 0 1rem;
     background-color: rgba(5, 0, 10, 0.6);
-    /*text-shadow: 1px 1px 1px 1px rgba(5, 0, 10, 0.6);;*/
 }
 .logo h1 span{
     text-shadow: 4px 4px 4px rgba(5, 0, 10, 0.6);
@@ -74,7 +73,6 @@ p{
 }
 
 #poland_03 ol {
-    /*font-size: 1.9rem;*/
     font-weight: normal;
     line-height: 1.3em;
 }

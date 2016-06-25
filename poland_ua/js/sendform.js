@@ -8,13 +8,13 @@ $(document).ready(function(){
 			data: $('#myForm').serialize(),
 			dataType: 'json'
 		}).error(function(jqXHR, status, error){
-				$(".error").fadeIn("slow", function(){
-				$(".error").fadeOut(10000);
+				$(".error").fadeIn("3000", function(){
+				$(".error").fadeOut(5000);
 			});
 		}).success(function(data, status, jqXHR) {
 				$('#myForm').find('input[name="name"], input[name="phone"], input[name="mail"], textarea[name="comment"]').val('');
-				$(".success").fadeIn("slow", function () {
-				$(".success").fadeOut(10000);
+				$(".success").fadeIn("3000", function () {
+				$(".success").fadeOut(5000);
 			});
 		});
 	});

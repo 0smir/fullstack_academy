@@ -16,7 +16,7 @@ $(document).ready(function(){
 		}). success(function(data, status, jqXHR) {
 			document.getElementsByClassName('results').innerHTML= succsessText;
 			$(".results").addClass('success');
-			$('#myForm').find('input[name="name"], input[name="phone"], input[name="mail"], input[name="comment"]').val('');
+			$('#myForm').find('input[name="name"], input[name="phone"], input[name="mail"], textarea[name="comment"]').val('');
 		});
 	});
 

@@ -198,11 +198,11 @@ form textarea {
 }
 
 .success{
-    display: none;
+    /*display: none;*/
     background-color: #96ddc4;
 }
 .error{
-    display: none;
+    /*display: none; */
     background-color: #d74c49;
 }
 

@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-
-	var succsessText = 'Дані успішно відправлені. Дякую за звернення у візовий центр &laquo; VISA-SVIT &raquo;',
-		errorText = 'Увага! Виникла помилка. Будь ласка, спробуйте ще раз!';
-
 	$('#myForm').submit(function(event){
 		event.preventDefault();
 		$.ajax({
@@ -12,11 +8,9 @@ $(document).ready(function(){
 			data: $('#myForm').serialize(),
 			dataType: 'json'
 		}).error(function(jqXHR, status, error){
-			document.getElementsByClassName('results').innerHTML= errorText;
+			$(".results:last-of-type").addClass('error');
 		}). success(function(data, status, jqXHR) {
-			$(".results").addClass('success');
-			document.getElementsByClassName('results').innerHTML= succsessText;
-
+			$(".results:first-of-type").addClass('success');
 			$('#myForm').find('input[name="name"], input[name="phone"], input[name="mail"], textarea[name="comment"]').val('');
 		});
 	});

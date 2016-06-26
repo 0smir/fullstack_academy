@@ -1,16 +1,20 @@
 $(document).ready(function(){
 
-	$('#myForm').submit(function(e){
-		e.preventDefault();
+	$('#myForm').submit(function(event){
+		event.preventDefault();
 		$.ajax({
 			url:'https://formspree.io/o.v.smirnova1987@gmail.com',
 			type:'post',
-			data:$('#myForm').serialize(),
-			success:function(){
-				$('.result-form').find('span').addClass('succsess');	
-			}
+			data: $('#myForm').serialize(),
+			dataType: 'json'
+		}).error(function(jqXHR, status, error){
+			$("#poland_02").find(".error").fadeIn(100).delay(5000).fadeOut(5000);
+		}).success(function(data, status, jqXHR) {
+			$('#myForm').find('input[name="name"], input[name="phone"], input[name="mail"], textarea[name="comment"]').val('');
+			$("#poland_02").find(".success").fadeIn(100).delay(5000).fadeOut(5000);
 		});
 	});
+
 
 
 });

@@ -191,13 +191,18 @@ form textarea {
 #poland_03 .addrequest{
     margin-top: 2rem;
 }
-.result-form span{
-    display: none;
+.success,
+.error{
+    color: #ffffff;
 }
 
 .success{
-    color: #96ddc4;
-    display: block;
+    display: none;
+    background-color: #96ddc4;
+}
+.error{
+    display: none;
+    background-color: #d74c49;
 }
 
 

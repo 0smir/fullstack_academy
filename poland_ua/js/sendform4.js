@@ -10,7 +10,7 @@ $(document).ready(function(){
             $("#modalFormCallback").find(".error").fadeIn(100).delay(5000).fadeOut(5000);
         }).success(function(data, status, jqXHR) {
             $('#callbackRequest').find('input[name="name"], input[name="phone"], input[name="mail"], textarea[name="comment"]').val('');
-            $("#modalFormCallback").(".success").fadeIn(100).delay(5000).fadeOut(5000);
+            $("#modalFormCallback").find(".success").fadeIn(100).delay(5000).fadeOut(5000);
         });
     });
 

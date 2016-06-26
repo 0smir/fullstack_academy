@@ -12,7 +12,7 @@ $(document).ready(function(){
 			$("#modalForForm").find(".error").fadeIn(100).delay(5000).fadeOut(5000);
 		}).success(function(data, status, jqXHR) {
 			$('#modalForm').find('input[name="name"], input[name="phone"], input[name="mail"], textarea[name="comment"]').val('');
-			$("#modalForForm").(".success").fadeIn(100).delay(5000).fadeOut(5000);
+			$("#modalForForm").find(".success").fadeIn(100).delay(5000).fadeOut(5000);
 		});
 	});
 

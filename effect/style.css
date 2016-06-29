@@ -18,7 +18,7 @@
 	background:#f6f6f6;
 }
 
-.acrion-wrapper{
+.action-wrapper{
 	z-index: 1;
 }
 
@@ -44,3 +44,20 @@
 	box-shadow: 0 0 1px rgba(0,0,0, .14), 0 1px 4px rgba(0,0,0, .28);
 	transition: all 0.4s ease-in-out;
 }
+
+.action-wrapper:hover .action-button{
+	transition: all 0.6s ease-in-out;
+	background: linear-gradient(to top, #29B4FD, rgba(41, 180, 253, 1), rgba(41, 180, 253, 1), rgba(41, 180, 253, 0.9), rgba(41, 180, 253, 0.6), rgba(41, 180, 253, 0.3), rgba(41, 180, 253, 0.1), rgba(41, 180, 253, 0));
+	transform: translate3d(-162px, 0, 0) scale(16);
+	box-shadow: none;
+}
+
+.action-wrapper:hover .add{
+	transition: all 0.6s ease-in-out;
+	transform: translate3d(-150px, 0, 0) rotate(-315deg);
+}
+
+
+
+
+

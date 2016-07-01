@@ -44,6 +44,14 @@ em{
     to{height: 70px;}
 }
 
+/*@-webkit-keyframes scale_image{
+    to{
+        
+    }
+}
+
+
+@keyframes scale_image{}*/
 
 .anima-frame{
     width: 100%;
@@ -65,8 +73,10 @@ em{
 figure{
     max-width: 580px;
     height: 580px;
+    border: 1px solid #000;
     background: #fff url(images/5.jpg) 50% 50% no-repeat;
     position: relative;
+    overflow: hidden;
 }
 
 figure::before,
@@ -106,12 +116,22 @@ figcaption a{
 
 figure img{
     width: 100%;
+    height: 100%;
     display: none;
+    transition: transform 5s ease;
 }
 
 figure:hover figcaption{
     display: block;
-    -webkit-animation: show_figcaption 1s cubic-bezier(.76, .90, .18, .91); 
-    animation: show_figcaption 1s cubic-bezier(.76, .90, .18, .91); 
+    -webkit-animation: show_figcaption 0.5s cubic-bezier(.76, .90, .18, .91); 
+    animation: show_figcaption 0.5s cubic-bezier(.76, .90, .18, .91); 
+}
+
+figure:hover  img{
+    display: block;
+}
+
+img:hover{
+    transform: scale(1.3);
 }
 

@@ -75,6 +75,8 @@ figure{
     height: 580px;
     border: 1px solid #000;
     background: #fff url(images/5.jpg) 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
     position: relative;
     overflow: hidden;
 }

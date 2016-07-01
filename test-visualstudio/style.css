@@ -22,9 +22,96 @@ em{
     padding-left: 20px;
 }
 
+@-webkit-keyframes shadow{
+    from{text-shadow: 1px 1px 1px #d74c49;}
+    50%{text-shadow: 3px 3px 3px #d74c49;}
+    to{text-shadow: 1px 1px 1px #d74c49;}
+}
+
+@keyframes shadow{
+    from{text-shadow: 1px 1px 1px #d74c49;}
+    50%{text-shadow: 3px 3px 3px #d74c49;}
+    to{text-shadow: 1px 1px 1px #d74c49;}
+}
+
+@-webkit-keyframes show_figcaption{
+    from{ height: 45px;}
+    to{height: 70px;}
+}
+
+@keyframes show_figcaption{
+    from{ height: 45px;}
+    to{height: 70px;}
+}
+
+
 .anima-frame{
     width: 100%;
     min-height: 300px;
     border: 1px solid #000;
     background-color: #ebebeb; /*lightgray*/
 }
+
+
+.anima-frame > h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    color: #003320;
+    -webkit-animation: shadow 4s infinite ease-in-out;
+    animation: shadow 4s infinite ease-in-out;
+}
+
+figure{
+    max-width: 580px;
+    height: 580px;
+    background: #fff url(images/5.jpg) 50% 50% no-repeat;
+    position: relative;
+}
+
+figure::before,
+figure::after{
+    display: block;
+    content: ' ';
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 3;
+    bottom: 30px;
+    left: 10px;
+}
+
+figure::after{
+    transform: rotate(90deg);
+}
+
+
+figcaption{
+    width: 100%;
+    position: absolute;
+    padding: 10px 0;
+    box-sizing: border-box;
+    bottom: 0;
+    background-color: rgba(35, 35, 35, .6);
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+figcaption a{
+    color: #fff;
+    text-decoration: none;
+}
+
+figure img{
+    width: 100%;
+    display: none;
+}
+
+figure:hover figcaption{
+    display: block;
+    -webkit-animation: show_figcaption 1s cubic-bezier(.76, .90, .18, .91); 
+    animation: show_figcaption 1s cubic-bezier(.76, .90, .18, .91); 
+}
+

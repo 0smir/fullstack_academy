@@ -9,7 +9,8 @@ body{
     margin: 50px;
 }
 
-.first img{
+.first img,
+figure > img{
     height: 100%;
     width: 100%;
 }
@@ -86,12 +87,10 @@ body{
 }
 
 /*-----------animation----------*/ 
-/*@-webkit-keyframes round_move{
-    from{transform: translate(20px 20px);}
-    10%{transform: translate(20px -20px);}
-    to{}
-
-}*/
+@-webkit-keyframes round_move{
+    from{transform: rotate(0deg) translateX(225px);}
+    to{transform: rotate(360deg) translateX(225px) ;}
+}
 
 @keyframes round_move{
     from{transform: rotate(0deg) translateX(225px);}
@@ -140,5 +139,46 @@ body{
   
 }
 
+figure{
+   height: 580px;;
+   width: 580px;
+   border: 1px solid #534b4f; 
+   overflow: hidden;
+   -webkit-perspective: 100px;
+   perspective: 100px;
+   -webkit-perspective-origin: left;
+   perspective-origin: left;
+}
 
+@keyframes anim_block{
+    from{transform: rotateY(0deg);}
+    to{transform: rotateY(360deg);}
+}
+
+.wrap{
+    height: 200px;
+    width: 200px;
+    background-color: lightpink;
+    border: 1px solid palevioletred;
+    margin: 150px;
+    position: relative;
+
+    transform-origin: left;
+    animation: anim_block 6s infinite linear;
+  
+}
+
+/*p{
+    background-color: orangered;
+    border: 1px solid black;
+    padding: 10px 0;
+    /*animation: anim_block 3s 1 linear;
+    transform-origin: left;*/
+    /*transform: rotateZ(60deg);*/
+    /*transition: transform 3s  ease;*/
+/*}*/
+
+/*.wrap:hover p{
+    transform: rotateY(120deg);
+}*/
 

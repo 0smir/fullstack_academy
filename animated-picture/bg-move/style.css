@@ -1,0 +1,77 @@
+html, body{
+	font-size: 16px;
+	font-family: Verdana sans-serif;
+	font-weight: normal;
+}
+
+figure{
+	max-width: 320px;
+	max-height: 320px;
+	position: relative;
+	background-color: #91a3b0;
+	text-align: center;
+	overflow: hidden;
+}
+
+figcaption{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+}
+
+img{
+	display: inline-block;
+	position: relative;
+	max-height: 100%;
+	max-width: 100%;
+	transition: transform .4s;
+	transform: scale(1.4);
+}
+
+h2, p {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	transition: opacity .6s ease;
+	opacity: .4;
+	z-index: 3;
+	transition: transrorm .3s ease;
+}
+h2{
+	top: 40%;
+	left: 0;
+}
+
+p{
+	bottom: 30%;
+	left: 0;
+}
+
+figcaption::before,
+figcaption::after{
+
+}
+
+figure:hover img{
+	transform: scale(1);
+}
+
+figure:hover h2,
+figure:hover p{
+	opacity: 1;
+}
+
+figure:hover h2{
+	transform: translateY(20px);
+}
+
+figure:hover p{
+	transform: translateY(-20px);
+}
+
+
+
+
